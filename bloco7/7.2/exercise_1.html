@@ -1,0 +1,33 @@
+<!-- Add a 2 second animation for the <div> element, which
+  changes the color from red to blue. Call the animation "example" -->
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <style>
+      div {
+        width: 100px;
+        height: 100px;
+        background-color: red;
+      }
+
+      .example {
+        animation: example 2s;
+      }
+
+      @keyframes example {
+        to {
+          background-color: blue;
+        }
+      }
+
+    </style>
+  </head>
+
+  <body>
+
+    <div class="example"></div>
+
+  </body>
+
+</html>
