@@ -63,16 +63,52 @@ const books = [
     },
 ];
 
-const expected_result = 43;
+const expected_result = [
+    {
+        age: 31,
+        author: 'Isaac Asimov'
+    },
+    {
+        age: 38,
+        author: 'H. P. Lovecraft'
+    },
+    {
+        age: 39,
+        author: 'Stephen King'
+    },
+    {
+        age: 43,
+        author: 'George R. R. Martin'
+    },
+    {
+        age: 45,
+        author: 'Frank Herbert'
+    },
+    {
+        age: 62,
+        author: 'J. R. R. Tolkien'
+    }
+];
 
 /*
-    Calcule a média de idade que as pessoas autoras tinham quando seus respectivos livros foram lançados.
+    Construa um array de objetos a partir do array de livros. Cada objeto deve conter 
+    uma propriedade author, com o nome da pessoa autora do livro, e uma propriedade age 
+    com a idade dessa pessoa quando o livro foi lançado. O array deve ser ordenado por 
+    idade, ou seja, da pessoa mais jovem para a mais velha considerando suas idades quando o 
+    livro foi lançado.
 */
 
-const averageAge = (arr) => {
-    const ageList = arr.map((elemento) => elemento.releaseYear - elemento.author.birthYear);
-    const sumAges = ageList.reduce((acum, valorAtual) => acum + valorAtual);
-    return sumAges/ageList.length;
+const nameAndAge = (arr) => {
+
+    const nameAndAgeAuthor = arr.map((elemento) => {
+        return {
+            age: elemento.releaseYear - elemento.author.birthYear,
+            author: elemento.author.name,
+        }
+    });
+    return nameAndAgeAuthor.sort((a, b) => a.age - b.age);
 }
-console.log(averageAge(books));
-assert.equal(averageAge(books), expected_result);
+
+console.log(nameAndAge(books));
+assert.deepEqual(nameAndAge(books), expected_result);
+    

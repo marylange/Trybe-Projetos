@@ -63,16 +63,23 @@ const books = [
     },
 ];
 
-const expected_result = 43;
+const expected_result = [
+    'As Crônicas de Gelo e Fogo - Fantasia - George R. R. Martin',
+    'O Senhor dos Anéis - Fantasia - J. R. R. Tolkien',
+    'Fundação - Ficção Científica - Isaac Asimov',
+    'Duna - Ficção Científica - Frank Herbert',
+    'A Coisa - Terror - Stephen King',
+    'O Chamado de Cthulhu - Terror - H. P. Lovecraft'
+];
 
 /*
-    Calcule a média de idade que as pessoas autoras tinham quando seus respectivos livros foram lançados.
+    Crie um array com strings no formato NOME_DO_LIVRO - GÊNERO_DO_LIVRO - NOME_DA_PESSOA_AUTORA
 */
 
-const averageAge = (arr) => {
-    const ageList = arr.map((elemento) => elemento.releaseYear - elemento.author.birthYear);
-    const sumAges = ageList.reduce((acum, valorAtual) => acum + valorAtual);
-    return sumAges/ageList.length;
+const formatedBookNames = (arr) => {
+    const result = arr.map((elementoLivro) => `${elementoLivro.name} - ${elementoLivro.genre} - ${elementoLivro.author.name}`);
+    return result;
 }
-console.log(averageAge(books));
-assert.equal(averageAge(books), expected_result);
+
+console.log(formatedBookNames(books));
+assert.deepEqual(formatedBookNames(books), expected_result);
