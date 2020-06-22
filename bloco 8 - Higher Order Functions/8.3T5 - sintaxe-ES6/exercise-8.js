@@ -8,7 +8,7 @@ const assert = require('assert')
 
 // escreva greet abaixo
 const greet = (name, message = ["Hi", "Good morning", "Oi"]) => {
-    for (let i = 0; i < message.length; i++) {
+    for (let i = 0; i < message.length; i+= 1) {
         if (name == "John") {
             return `${message[0]} ${name}`;
         } else if (name == "John") {
