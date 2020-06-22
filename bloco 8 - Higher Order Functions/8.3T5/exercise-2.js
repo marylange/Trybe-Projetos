@@ -2,11 +2,12 @@ const assert = require('assert')
 
 const sum = (...sums) => {
     let result = 0;
-    for(let i; i < sums.length; i += 1) {
+    for(let i = 0; i < sums.length; i += 1) {
         result += sums[i]; 
     }
     return result;
 }
+
 console.log(sum(4, 4,  4));
 assert.equal(sum(), 0)
 assert.equal(sum(1), 1)
