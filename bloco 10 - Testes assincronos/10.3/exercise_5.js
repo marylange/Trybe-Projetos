@@ -8,10 +8,10 @@ const array = [];
 for (let i = 0; i < 10; i++) {
   array.push(numerosAleatorios() ** 2);
 }
-console.log(array);
+
 const reducer = (acumulador, currentValue) => acumulador + currentValue;
 const result = array.reduce(reducer);
-console.log(result);
+
 
 function myPromise() {
   return new Promise(function (resolve, reject) {
@@ -44,9 +44,11 @@ function myPromise() {
   })  
 }
 
-myPromise().then(function (message) {
-  console.log(message);
-}).catch(function (message) {
-  console.log(message);
+myPromise()
+  .then((message) => {
+    console.log(message);
+})
+  .catch((message) => {
+    console.log(message);
 })
 

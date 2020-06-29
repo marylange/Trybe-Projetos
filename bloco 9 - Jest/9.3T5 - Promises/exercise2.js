@@ -20,7 +20,7 @@ const numerosAleatorios = () => {
 }
 const array = [];
 for (let i = 0; i < 10; i++) {
-    array.push(numerosAleatorios() ** 2);
+    array.push(numerosAleatorios() * 2);
 }
 
 const reducer = (acumulador, currentValue) => acumulador + currentValue;
