@@ -1,0 +1,26 @@
+.todo {
+  border: 1px solid;
+  border-radius: 25px;
+  display: flex;
+  float: left;
+  justify-content: center;
+  margin: 10px;
+  width: 33.33%;
+}
+
+.header {
+  display: flex;
+  justify-content: center;
+}
+
+.container {
+  align-content: center;
+  display: flex;
+  justify-content: space-around;
+}
+
+.k {
+  display: flex;
+  flex-direction: column;
+  letter-spacing: 1px;
+}
