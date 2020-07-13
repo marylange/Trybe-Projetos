@@ -8,10 +8,10 @@ class Pokemon extends React.Component {
     return (
       <div className='todo'>
         <div className='container'>
-          <div className="k">
-            <p className='type-pokemon'>Tipo: {type}</p>
-            <p className='name-pokemon'>Nome: {name}</p>
-            <p className='value-pokemon'>Peso: {averageWeight.value}{averageWeight.measurementUnit}</p>
+          <div>
+            <p className='pokemon'>Pokemon: {name}</p>
+            <p className='pokemon'>Tipo: {type}</p>
+            <p className='pokemon'>Peso: {averageWeight.value}{averageWeight.measurementUnit}</p>
           </div>
           <div>
             <img className='image-pokemon' src={image} alt='imagem pokemon' />

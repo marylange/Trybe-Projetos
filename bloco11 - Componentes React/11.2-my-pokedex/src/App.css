@@ -1,11 +1,11 @@
+body {
+  margin: 50px;
+}
+
 .todo {
-  border: 1px solid;
-  border-radius: 25px;
   display: flex;
   float: left;
-  justify-content: center;
-  margin: 10px;
-  width: 33.33%;
+  width: 30%;
 }
 
 .header {
@@ -14,13 +14,14 @@
 }
 
 .container {
-  align-content: center;
+  border: 1px solid;
   display: flex;
-  justify-content: space-around;
+  height: 200px;
+  margin: 50px;
+  padding: 20px;
+  width: 200px;
 }
 
-.k {
-  display: flex;
-  flex-direction: column;
-  letter-spacing: 1px;
+.pokemon {
+  margin: 20px;
 }
