@@ -1,6 +1,5 @@
 import React from 'react';
 import Foto from '../img/mary2.JPG';
-import { BrowserRouter, Link } from 'react-router-dom';
 
 class Inicio extends React.Component {
 	render() {
