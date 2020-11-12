@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>Exercício 4.5</title>
+    <style>
+      div {
+        border-color: black;
+        border-style: solid;
+      }
+      .title {
+        text-align: center;
+      }
+
+      .main-content {
+        background-color: yellow;
+      }
+
+      .main-content .center-content {
+        background-color: red;
+        width: 50%;
+        margin-left: auto;
+        margin-right: auto;
+      }
+
+      .main-content .center-content p {
+        font-style: italic;
+      }
+
+      .main-content .left-content {
+        background-color: green;
+        width: 60%;
+        margin-left: 0;
+        margin-right: auto;
+      }
+
+      .main-content .left-content .small-image {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        border-radius: 100%;
+      }
+
+      .main-content .right-content {
+        background-color: blue;
+        width: 60%;
+        margin-left: auto;
+        margin-right: 0;
+      }
+
+      .main-content .description {
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <script>
+			const tagH1 = document.createElement('h1');
+			tagH1.innerText = 'Exercício 4.5 - JavaScript DOM';
+			let tagBody = document.body;
+			tagBody.appendChild(tagH1);
+
+			const elementoPai = () => {
+				const tagBody = document.querySelector('body');
+				const tagDiv = document.createElement('div');
+				tagDiv.className = 'main-content';
+				tagBody.appendChild(tagDiv);
+				elementoFilho(tagDiv);
+      }
+      /*Adicione a tag div com a classe center-content como filho da tag div criada no passo 2;*/
+			const elementoFilho = (param) => {
+				const divFilho = document.createElement('div');
+				divFilho.className = 'center-content';
+				param.appendChild(divFilho);
+			}
+
+      const divPai = elementoPai();
+			const divFilho = elementoFilho(divPai);
+
+
+    </script>
+  </body>
+</html>

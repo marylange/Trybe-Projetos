@@ -1,0 +1,36 @@
+/* * {
+  border: 1px solid red;
+} */
+
+h1 {
+  text-align: center;
+}
+
+body {
+  width: 80%;
+  margin: 0 auto;
+}
+
+#card-verso img {
+  width: 100px;
+}
+
+#container-gridCartas {
+  width: 600px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.card {
+  /* background-color: red;
+  border: 2px solid black; */
+  padding: 0 40px;
+  margin: 10px;
+  /* opacity: 0; */
+}
+
+.card img {
+  width: 100px;
+}

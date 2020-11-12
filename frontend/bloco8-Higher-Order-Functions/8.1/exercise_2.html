@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+  </head>
+
+  <body>
+    <script>
+      const PALAVRA = (frase) => {
+        const arrPalavra = frase.split(" ");
+        let palavraLonga = 0;
+        let OutraPalavra = "";
+        for (let i = 0; i < arrPalavra.length; i++) {
+          if (palavraLonga < arrPalavra[i].length) {
+            palavraLonga = arrPalavra[i].length;
+            OutraPalavra = arrPalavra[i];
+          }
+        }
+        return OutraPalavra;
+      }
+      console.log(PALAVRA("Antônio foi no banheiro e não sabemos o que aconteceu"));
+    </script>
+  </body>
+
+</html>

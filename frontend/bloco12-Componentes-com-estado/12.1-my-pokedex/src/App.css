@@ -1,0 +1,27 @@
+body {
+  margin: 50px;
+}
+
+.todo {
+  display: flex;
+  float: left;
+  width: 30%;
+}
+
+.header {
+  display: flex;
+  justify-content: center;
+}
+
+.container {
+  border: 1px solid;
+  display: flex;
+  height: 200px;
+  margin: 50px;
+  padding: 20px;
+  width: 200px;
+}
+
+.pokemon {
+  margin: 20px;
+}

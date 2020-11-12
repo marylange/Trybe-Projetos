@@ -1,0 +1,9 @@
+.AddMovie {
+  background: linear-gradient(329.54deg, #29B6D1 0%, #00C7C7 100%);
+  height: 70vh;
+  width: 100vw;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

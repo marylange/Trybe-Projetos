@@ -1,0 +1,11 @@
+{
+  "scripts": {
+    "test": "jest"
+  },
+  "devDependencies": {
+    "jest": "^26.4.0"
+  },
+  "dependencies": {
+    "react-redux": "^7.2.1"
+  }
+}

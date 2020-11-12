@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <script src="script.js"></script>
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
+  <title>Cadastro de currículo</title>
+</head>
+
+<body>
+  <header>
+    <h1>Cadastro de currículo</h1>
+  </header>
+  <article>
+    <form name="cadastroForm" action="" enctype="multipart/form-data" id="formCurriculo">
+      <section>
+        Nome: <input type="text" id="nome-usuario" maxlength="40" required="required" placeholder="Nome completo">
+        E-mail: <input type="email" id="email-usuario" maxlength="50" required="required" oninvalid="alert('Insira um email válido.')" pattern="{texto@texto.texto}" placeholder="email@exemplo.com">
+        CPF: <input type="number" id="cpf-usuario" min="11" maxlength="11" required="required">
+  
+        Endereço: <input type="text" id="endereco-usuario" maxlength="200" required="required">
+        Cidade: <input type="text" id="cidade-usuario" maxlength="28" required="required">
+  
+        Estado: <select id="estado" required="required"></select>
+        <p>Tipo:</p>
+        Casa: <input type="radio" class="1 radio" id="casa" name="moradia" value="casa" required="required">
+        Apartamento <input type="radio" class="2 radio" id="apart" name="moradia" value="apart">
+      </section>
+      <section>
+        <label>Resumo do currículo: </label>
+        <textarea id="rascunho-curriculo" cols="100" rows="20" maxlength="1000" required="required"
+          placeholder="Digite o resumo aqui"></textarea>
+  
+        Cargo: <input type="text" id="cargo" maxlength="40" required="required">
+        Descrição do cargo: <input type="text" id="descricao-cargo" maxlength="500" required="required">
+  
+        Data de início: <input type="text" id="datepicker" min="2000-01-01" max="2020-12-31" required="required">
+      </section>
+      <button type="submit" form="formCurriculo" id="botao" value="enviar">Enviar</button>
+      <button type="reset" form="" value="" id="reset">Apagar</button>
+    </form>
+  </article>
+  <script type="text/javascript" src="js/materialize.min.js"></script>
+</body>
+
+</html>

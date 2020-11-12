@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/CSS" href="style.css">
+  <title>Facebook login</title>
+</head>
+<body>
+  <header class="top-bar">
+    <section class="logo">
+      <img class="facebook-logo" src="img/facebook1.png" alt="Logo Facebook">
+    </section>
+    <form class="signup">
+      <div class="signup-left">
+        <label id="user-email-phone-label">Email ou telefone</label>
+        <input id="user-email-phone" class="user-email-phone" type="email">
+      </div>
+      <div class="signup-right">
+        <label for="user-password">Senha</label>
+        <input id="user-password" class="user-password" type="password">
+        <a href="#">Esqueceu a conta?</a>
+      </div>
+      <div class="form-button">
+        <button id="button-login" class="button-login">Entrar</button>
+      </div>
+    </form>
+  </header>
+  <div class="container-content">
+    <section class="content-left">
+      <h1 class="content-wrap">O Facebook ajuda você a se conectar e compartilhar com as pessoas que fazem parte da sua vida.</h1>
+      <img id="facebook-networking" src="img/networking.png" alt="Facebook conectando o mundo">
+    </section>
+    <section class="content-right">
+      <h2>Abra uma conta</h2>
+      <p class="subtitle-presentation">É rápido e fácil.</p>
+      <form id="signin">
+        <div class="name-surname">
+          <input type="text" placeholder="Nome" class="input-content">
+          <input type="text" placeholder="Sobrenome" class="input-content">
+        </div>
+        <div>
+          <input type="text" placeholder="Celular ou email" class="input-content-email-senha">
+        </div>
+        <div>
+          <input type="password" placeholder="Nova senha" class="input-content-email-senha">
+        </div>
+        <div>
+          <p for="date-of-birth">Data de nascimento</p>
+          <input id="date-of-birth" type="datetime-local" placeholder="dd/mm/aaaa">
+        </div>
+        <div>
+          <p for="gender">Gênero</p>
+          <input id="gender" type="radio" name="gender" value="Feminino">Feminino
+          <input id="gender" type="radio" name="gender" value="Masculino">Masculino
+          <input id="gender" type="radio" name="gender" value="Personalizado">Personalizado
+          <section>
+            <img src="img/interrogacao.png" class="interrogation-image" alt="">
+          </section>
+        </div>
+        <section>
+          <p>Ao clicar em Cadastre-se, você concorda com nossos <a href="#">Termos, Política de Dados e Política de Cookies</a>. Você pode receber
+          notificações por SMS e pode cancelar isso quando quiser.</p>
+        </section>
+      </form>
+      <button id="facebook-register" class="facebook-register">Cadastre-se</button>
+    </section>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>

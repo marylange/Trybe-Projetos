@@ -1,0 +1,197 @@
+/* Cabeçalho */
+body {
+  background: linear-gradient(white, #d3d8e8);
+  border: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.top-bar {
+  background-image: linear-gradient(#4e69a2, #3b5998 50%);
+  border-bottom: 1px solid #133783;
+  display: flex;
+  height: 80px;
+  justify-content: space-around;
+}
+
+.facebook-logo {
+  margin-right: 17px;
+  margin-top: -40px;
+  position: relative;
+  width: 169px;
+}
+
+.signup {
+  display: flex;
+}
+
+a {
+  color: #9cb4d8;
+  cursor: pointer;
+  font-size: 12px;
+  line-height: 1.34;
+  text-decoration: none;
+}
+
+.signup-left {
+  color: white;
+  display: flex;
+  flex-direction: column;
+  font-size: 12px;
+  padding: 15px;
+}
+
+.user-email-phone {
+  border-radius: 0;
+}
+
+.signup-right {
+  color: white;
+  display: flex;
+  flex-direction: column;
+  font-size: 12px;
+  padding: 15px;
+}
+
+.user-email-phone {
+  border: 1px solid #ccd0d5;
+  border-color: #1d2a5b;
+  border-radius: 0;
+  margin: 0;
+  padding: 3px;
+  width: 142px;
+}
+
+.user-password {
+  border: 1px solid #ccd0d5;
+  border-color: #1d2a5b;
+  border-radius: 0;
+  margin: 0;
+  padding: 3px;
+  width: 142px;
+}
+
+.form-button {
+  align-items: center;
+  display: flex;
+  padding: 10px;
+}
+
+.button-login {
+  background: #4466ad;
+  border: 1px solid #2f4981;
+  border-radius: 0;
+  color: white;
+  font-size: 12px;
+  padding: 5px 10px;
+}
+
+/* Conteúdo */
+.container-content {
+  display: flex;
+  justify-content: space-around;
+  padding: 40px;
+}
+
+.content-wrap {
+  color: #385898;
+}
+
+.content-left {
+  width: 25%;
+}
+
+.content-right {
+  width: 25%;
+}
+
+.content-right h2 {
+  color: #333;
+  display: block;
+  font-family: 'Freight Sans Bold', Helvetica, Arial, sans-serif !important;
+  font-size: 36px;
+  font-weight: bold !important;
+  letter-spacing: normal;
+  line-height: 120%;
+  margin-bottom: 5px;
+  text-rendering: optimizelegibility;
+}
+
+.subtitle-presentation {
+  color: #333;
+  display: block;
+  font-family: 'Freight Sans', Helvetica, Arial, sans-serif !important;
+  font-size: 19px;
+  font-weight: normal !important;
+  line-height: 126%;
+  letter-spacing: normal;
+  margin-bottom: 20px;
+  text-rendering: optimizelegibility;
+}
+
+.name-surname {
+  display: flex;
+}
+
+.interrogation-image {
+  width: 15px;
+}
+
+.facebook-register {
+  background: linear-gradient(#67ae55, #578843);
+  background-color: #69a74e;
+  border: 1px solid;
+  border-color: #3b6e22 #3b6e22 #2c5115;
+  border-radius: 5px;
+  box-shadow: inset 0 1px 1px #a4e388;
+  color: white;
+  display: inline-block;
+  margin-bottom: 10px;
+  margin-top: 10px;
+  min-width: 194px;
+  padding: 7px 20px;
+  position: relative;
+  text-align: center;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.5);
+}
+
+.input-content {
+  border: 1px solid #ccd0d5;
+  border-color: #bdc7d8;
+  border-radius: 5px;
+  color: #1c1e21;
+  display: inline-block;
+  font-size: 18px;
+  letter-spacing: normal;
+  margin: 0;
+  padding: 8px 10px;
+  position: relative;
+  text-align: start;
+  text-indent: 0px;
+  text-rendering: auto;
+  text-shadow: none;
+  text-transform: none;
+  width: 172px;
+  word-spacing: normal;
+}
+
+.input-content-email-senha {
+  border: 1px solid #ccd0d5;
+  border-color: #bdc7d8;
+  border-radius: 5px;
+  color: #1c1e21;
+  display: inline-block;
+  font-size: 18px;
+  letter-spacing: normal;
+  margin: 0;
+  padding: 8px 10px;
+  position: relative;
+  text-align: start;
+  text-indent: 0px;
+  text-rendering: auto;
+  text-shadow: none;
+  text-transform: none;
+  width: 366px;
+  word-spacing: normal;
+}

@@ -1,0 +1,67 @@
+.color {
+  border: 1px solid black;
+  height: 40px;
+  margin: 5px;
+  width: 40px;
+}
+
+.selected {
+  background-color: black;
+  border: 1px solid black;
+  float: left;
+}
+
+.color-yellow {
+  background-color: yellow;
+  border: 1px solid black;
+  float: left;
+}
+
+.color-blue {
+  background-color: blue;
+  border: 1px solid black;
+  float: left;
+}
+
+.color-green {
+  background-color: green;
+  border: 1px solid black;
+  float: left;
+}
+
+.pixel {
+  background-color: white;
+  border: 1px solid black;
+  height: 40px;
+  width: 40px;
+}
+
+.pixel-board {
+  display: grid;
+  grid-template-columns: repeat(5, 40px);
+  margin: 40px;
+  width: 210px;
+}
+
+.container {
+  align-items: center;
+  background-color: crimson;
+  border: 1px solid;
+  display: flex;
+  flex-direction: column;
+  margin: 50px;
+}
+
+.title {
+  font-size: 30px;
+  margin-top: 20px;
+  text-align: center;
+}
+
+.color-palette {
+  margin: 20px;
+}
+
+.clear-board {
+  margin: 10px;
+}

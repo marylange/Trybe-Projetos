@@ -1,0 +1,56 @@
+body {
+    font-size: 30px;
+    margin: 20px;
+}
+h1 {
+    font-size: 15px;
+}
+h2 {
+
+}
+
+img {
+    max-width: 100%;
+}
+
+figure {
+    margin: 0;
+    padding: 30px;
+}
+
+@media screen and (max-width: 700px) {
+    body {
+        background-color: rgb(204, 138, 0);
+        font-size: 45px;
+        margin: 40px;
+    }
+    h1 {
+        font-size: 20px;
+    }
+    figure {
+        padding: 60px;
+    }
+}
+
+@media screen and (min-width: 750px) {
+    body {
+        background-color: blueviolet;
+        font-size: 35px;
+        margin: 80px;
+        width: 100%;
+        
+    }
+    h1 {
+        font-size: 20px;
+    }
+
+    img {
+        display: grid;
+        grid-template-columns: 200px 200px;
+    }
+
+    figure {
+        float: none;
+        width: 50%;
+    }
+}

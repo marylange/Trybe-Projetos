@@ -1,0 +1,207 @@
+.body {
+  margin: 0;
+  padding: 0;
+  position: absolute;
+}
+
+.container-layout {
+  align-items: center;
+  display: flex;
+  flex-wrap: wrap;
+  height: 100%;
+  justify-content: center;
+  margin: 0 auto;
+  width: 90%;
+}
+
+.topo {
+  width: 50%;
+}
+
+.column {
+  background-color: aqua;
+  float: left;
+  padding: 20px;
+  width: 25%;
+}
+
+.img-section {
+  width: 100%;
+}
+
+.navbar {
+  display: flex;
+  float: left;
+}
+
+.navbar a {
+  color: darkgoldenrod;
+  padding: 14px 20px;
+  text-align: center;
+  text-decoration: none;
+}
+
+a:hover {
+  background-color: burlywood;
+  color: black;
+}
+
+.sub-navbar {
+  display: flex;
+  float: left;
+  margin: 5px;
+}
+
+.fly {
+  animation-delay: 3s;
+  animation-direction: alternate;
+  animation-duration: 10s;
+  animation-fill-mode: forwards;
+  animation-iteration-count: 3;
+  animation-name: flying;
+  display: flex;
+  flex-wrap: wrap;
+  height: 100px;
+  position: absolute;
+  width: 100px;
+  z-index: 5;
+}
+
+@keyframes flying {
+
+  0% {
+    left: 25%;
+    top: 20%;
+    transform: translate(50px, 100px);
+  }
+
+  25% {
+    left: 50%;
+    top: 20%;
+  }
+
+  50% {
+    left: 25%;
+    top: 50%;
+    transform: scale(2, 3);
+  }
+
+  75% {
+    left: 50%;
+    top: 50%;
+    transform: skew(10deg);
+  }
+
+  100% {
+    left: 25%;
+    top: 20%;
+  }
+}
+
+.article-animation {
+  animation: article-grow 4s steps(2, end) paused;
+
+}
+
+@keyframes article-grow {
+
+  0% {
+    transform: scale(1);
+  }
+
+  100% {
+    transform: scale(1.5);
+  }
+}
+
+.section-article {
+  background-color: blueviolet;
+  display: flex;
+  flex: 70%;
+  padding: 20px;
+}
+
+.section-conteudo {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.gif {
+  height: 300px;
+  transition: heigth 1s, width 1s;
+  width: 300px;
+}
+
+iframe:hover {
+  height: 500px;
+  width: 500px;
+}
+
+.section-aside {
+  background-color: blue;
+  display: flex;
+  flex: 70%;
+  padding: 20px;
+}
+
+.section-footer {
+  display: flex;
+  flex: 70%;
+  justify-content: space-around;
+  padding: 20px;
+}
+
+@media screen and ( max-width : 760px ) {
+
+  .container-layout {
+    background-color: yellow;
+    width: 100%;
+  }
+
+  .column {
+    width: 100%;
+  }
+
+  .container-orientation {
+    flex-direction: row;
+  }
+
+  .topo {
+    width: 100%;
+  }
+
+  .header {
+    width: 100%;
+  }
+
+  .section-conteudo {
+    float: left;
+  }
+}
+
+@media screen and ( orientation : landscape ) {
+
+  .container-orientation {
+    border: 1px solid red;
+    display: flex;
+    flex-direction: row;
+  }
+}
+
+@media screen and ( min-width : 1170px ) {
+
+  .container-layout {
+    background-color: red;
+    width: 50%;
+  }
+
+  .column {
+    width: 50%;
+  }
+
+  .container-orientation {
+    flex-direction: column;
+  }
+}
