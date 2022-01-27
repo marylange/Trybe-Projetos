@@ -1,4 +1,4 @@
-# Trybe Portfólio
+# Trybe Projetos
 Este é um repositório de exercícios [Trybe](https://www.betrybe.com/) para desenvolvimento de software por [Marylange Leal](https://www.linkedin.com/in/maryssleal/).
 
 A Trybe é uma escola de tecnologia com foco 100% em ensinar as __melhores práticas do mercado de tecnologia__ ao seus alunos/as.
