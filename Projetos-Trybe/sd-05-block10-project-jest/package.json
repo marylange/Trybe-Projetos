@@ -23,7 +23,7 @@
   "devDependencies": {
     "acorn": ">=5.7.4",
     "jest": "^24.9.0",
-    "minimist": ">=1.2.2"
+    "minimist": ">=1.2.6"
   },
   "dependencies": {
     "node-fetch": "^2.6.0"
